@@ -1,1 +1,1 @@
-# Replace the class 'ItemCollector' with [https://google.com](this)
+# Replace the class 'ItemCollector' with (https://google.com)[this]
