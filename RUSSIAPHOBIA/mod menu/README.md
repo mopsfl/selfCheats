@@ -3,15 +3,11 @@
 2. Start the game
 
 ### Features:
-> Super Speed
-
-> Strong Flashlight
-
-> God Mode
-
-> Collect all items
-
-> more soon...
+> Super Speed<br>
+> Strong Flashlight<br>
+> God Mode<br>
+> Collect all items<br>
+> more soon...<br>
 
 
 ### To click the open button and use the options, press escape (that mouse will be unlocked)
