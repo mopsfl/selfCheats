@@ -46,7 +46,7 @@ namespace ModMenu
 					if (ModMenu.strongFlashlight)
 					{
 						ModMenu.strongFlashlightString = "Strong Flashlight - ON";
-						Singleton<FlashlightItem>.Instance.LightObject.intensity = 5f;
+						Singleton<FlashlightItem>.Instance.LightObject.intensity = 3.5f;
 						Singleton<FlashlightItem>.Instance.LightObject.range = 1000f;
 						return;
 					}
