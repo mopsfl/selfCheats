@@ -82,7 +82,6 @@ namespace ModMenu
 				}
 			}
 			Debug.Log("[Mod Menu]: Initalized RUSSIAPHOBIA Mod Menu by mopsfl.");
-			Singleton<Notification>.Instance.SetMessage("RUSSIAPHOBIA Mod Menu by mopsfl initalized.", 3f, null, true);
 		}
 
 		// Token: 0x06001E6A RID: 7786
@@ -113,10 +112,10 @@ namespace ModMenu
 		// Token: 0x04002A0A RID: 10762
 		public static float flashlightdistance;
 
-		// Token: 0x04002E68 RID: 11880
+		// Token: 0x04002A0B RID: 10763
 		public static bool godMode = false;
 
-		// Token: 0x04002E6B RID: 11883
+		// Token: 0x04002A0C RID: 10764
 		public static string godModeString = "Godmode - OFF";
 	}
 }
