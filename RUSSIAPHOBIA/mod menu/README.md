@@ -1,13 +1,5 @@
 ### How to use
-> Create a new class, name it 'ModMenu' and paste [this](https://raw.githubusercontent.com/mopsfl/dnSpy-codes/main/RUSSIAPHOBIA/mod%20menu/Modmenu.cs) code.
-
-> Replace the 'PlayerController' class code with [this](https://raw.githubusercontent.com/mopsfl/dnSpy-codes/main/RUSSIAPHOBIA/mod%20menu/PlayerController.cs)
-
-> Compile it
-
-> Save module
-
-> Done (should be)
+1. Go to _SteamLibrary/steamapps/common/RUSSIAPHOBIA/RUSSIAPHOBIA_Data/Managed_ and replace _Assembly-CSharp.dll_ with the [modified](https://github.com/mopsfl/dnSpy-codes/raw/main/RUSSIAPHOBIA/mod%20menu/Assembly-CSharp.dll) one
 
 
 ### To click the open button and use the options, press escape (that mouse will be unlocked)
