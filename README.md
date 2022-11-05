@@ -1,5 +1,5 @@
 # dnSpy-codes
-Alle Skripts sind für offline / Einzelspieler Spiele erstellt und optimiert und könnten bei vorhandenen Multiplayer teils nicht funktionieren!
+Alle Skripts sind für offline / Einzelspieler Spiele erstellt / optimiert und könnten bei vorhandenen Multiplayer teils nicht funktionieren!
 
 ### Benutzte Tools:
 > [dnSpy (v.6.1.8)](https://github.com/dnSpy/dnSpy)<br>
