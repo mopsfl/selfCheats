@@ -15,6 +15,4 @@
 
 
 ### AKTUELLE BUGS:
-> Wenn du ein Sprungbrett nutzt, während du den Speed Hack aktiviert hast, musst du danach den Speedhack einmal aus und anschalten, sodass er wieder funktioniert.
-
-> Nachdem du eine "Szene" (das ende der Map) fertig hast, wird das Mod Menu nicht mehr funktionieren, solange du das Spiel nicht neustartest.
+> Nachdem du eine "Szene" (das ende der Map) fertig hast, musst du eine Funktion an oder ausschalten, sodass die Funktionen wieder funktionieren!
