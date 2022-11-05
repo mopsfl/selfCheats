@@ -11,18 +11,6 @@ namespace ModMenu
 		// Token: 0x060004E1 RID: 1249
 		public static void DrawMenu()
 		{
-			Debug.Log("______________________________________");
-			int sceneCount = SceneManager.sceneCountInBuildSettings;
-			string[] scenes = new string[sceneCount];
-			for (int i = 0; i < sceneCount; i++)
-			{
-				scenes[i] = Path.GetFileNameWithoutExtension(SceneUtility.GetScenePathByBuildIndex(i));
-			}
-			for (int s = 0; s < scenes.Length; s++)
-			{
-				Debug.Log(scenes[s]);
-			}
-			Debug.Log("______________________________________");
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
 			Texture2D background = new Texture2D(100, 30);
 			guistyle.normal.background = background;
