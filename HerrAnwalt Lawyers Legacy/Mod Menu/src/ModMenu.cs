@@ -1,7 +1,5 @@
 using System;
-using System.IO;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace ModMenu
 {
@@ -16,6 +14,20 @@ namespace ModMenu
 			guistyle.normal.background = background;
 			guistyle.alignment = TextAnchor.MiddleCenter;
 			guistyle.normal.textColor = Color.black;
+			if (Application.version != ModMenu.modmenuVersion)
+			{
+				Debug.Log("MOD MENU NOT COMPATIBLE FOR THIS GAME VERSION!");
+				GUI.Button(new Rect(0f, (float)(Screen.height - 30), (float)Screen.width, 20f), string.Concat(new string[]
+				{
+					"This Mod Menu version (",
+					ModMenu.modmenuVersion,
+					") is not compatible for this game version (",
+					Application.version,
+					")! Update to mod menu version ",
+					Application.version
+				}), guistyle);
+				return;
+			}
 			if (GUI.Button(new Rect((float)(Screen.width / 2 - 200), (float)(Screen.height - 30), 400f, 20f), "Mod Menu", guistyle))
 			{
 				ModMenu.MenuVisible = !ModMenu.MenuVisible;
@@ -150,5 +162,8 @@ namespace ModMenu
 
 		// Token: 0x040004D6 RID: 1238
 		public static float standardJumpTimer;
+
+		// Token: 0x04000587 RID: 1415
+		private static string modmenuVersion = "0.2";
 	}
 }
