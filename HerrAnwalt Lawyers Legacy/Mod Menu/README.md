@@ -5,7 +5,11 @@
 2. Start the game
 
 ### Features:
-> Soon
+> Speed Hack
+> God Mode / Heal
+> Infinite Jump
 
 
-### -
+### CURRENT BUGS:
+> Wenn du ein Sprungbrett nutzt, während du den Speed Hack aktiviert hast, musst du danach den Speedhack einmal an und ausschalten!
+> Nachdem du eine "Szene" fertig hast, wird das Mod Menu nicht mehr funktionieren, solange du das Spiel nicht neustartest.
