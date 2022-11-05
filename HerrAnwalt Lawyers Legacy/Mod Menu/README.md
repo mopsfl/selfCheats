@@ -11,6 +11,8 @@
 
 > Infinite Jump
 
+> mehr bald...
+
 
 ### AKTUELLE BUGS:
 > Wenn du ein Sprungbrett nutzt, während du den Speed Hack aktiviert hast, musst du danach den Speedhack einmal aus und anschalten, sodass er wieder funktioniert.
