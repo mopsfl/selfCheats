@@ -1,0 +1,17 @@
+<code>Scenes:
+<code>LangugeSelectionStart</code>
+<code>MenuApple</code>
+<code>Office</code>
+<code>IntroBeta</code>
+<code>CutSceneInDerSchule</code>
+<code>Sp_00_Tutorial</code>
+<code>Sp_01</code>
+<code>Sp_02</code>
+<code>Sp_03</code>
+<code>Sp_04</code>
+<code>Sp_05</code>
+<code>Sp_06_Lava</code>
+<code>Sp_07_Lava</code>
+<code>Sp_08_DauerLava</code>
+<code>Outro</code>
+<code>EndlosFigthing</code></code>
