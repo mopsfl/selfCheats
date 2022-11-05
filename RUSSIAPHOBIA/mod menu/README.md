@@ -7,7 +7,6 @@
 > Strong Flashlight<br>
 > God Mode<br>
 > Collect all items<br>
-> more soon...<br>
 
 
 ### To click the open button and use the options, press escape (that mouse will be unlocked)
