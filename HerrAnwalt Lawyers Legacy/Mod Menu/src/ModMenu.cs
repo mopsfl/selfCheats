@@ -163,7 +163,7 @@ namespace ModMenu
 		// Token: 0x040004D6 RID: 1238
 		public static float standardJumpTimer;
 
-		// Token: 0x04000587 RID: 1415
+		// Token: 0x040004D7 RID: 1239
 		private static string modmenuVersion = "0.2";
 	}
 }
