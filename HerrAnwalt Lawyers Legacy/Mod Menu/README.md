@@ -12,9 +12,10 @@
 - Infinite Jump
 - mehr bald...
 
-### Geplante Funktionen:
+### Geplante Funktionen / Features:
 - Quick Attack
 - Anti Lava
+- Hide Button
 
 
 ### AKTUELLE BUGS:
