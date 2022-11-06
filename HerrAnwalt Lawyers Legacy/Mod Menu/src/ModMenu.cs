@@ -3,14 +3,15 @@ using UnityEngine;
 
 namespace ModMenu
 {
-	// Token: 0x020000F0 RID: 240
+	// Token: 0x020000F3 RID: 243
 	public class ModMenu : MonoBehaviour
 	{
-		// Token: 0x060004E1 RID: 1249
+		// Token: 0x060004F3 RID: 1267
 		static ModMenu()
 		{
 			ModMenu.MenuVisible = false;
 			ModMenu.speedhack = false;
+			ModMenu.instantKill = false;
 			ModMenu.speedhackString = "Speed Hack - OFF";
 			ModMenu.healString = "Max Health";
 			ModMenu.godModeString = "Infinite Health - OFF";
@@ -26,7 +27,7 @@ namespace ModMenu
 			ModMenu.Title = "HerrAnwalt: Lawyers Legacy Mod Menu v." + ModMenu.modmenuVersion;
 		}
 
-		// Token: 0x060004E2 RID: 1250
+		// Token: 0x060004F4 RID: 1268
 		private static Texture2D MakeTex(int width, int height, Color col)
 		{
 			Color[] array = new Color[width * height];
@@ -40,59 +41,7 @@ namespace ModMenu
 			return texture2D;
 		}
 
-		// Token: 0x060004E3 RID: 1251
-		public static void DoMyWindow(int windowID)
-		{
-			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
-			guistyle.normal.background = ModMenu.MakeTex(2, 2, new Color(50f, 0f, 0f, 1f));
-			guistyle.normal.textColor = Color.white;
-			guistyle.alignment = TextAnchor.UpperCenter;
-			guistyle.border = new RectOffset(2, 2, 2, 2);
-			if (GUI.Button(new Rect(10f, 30f, 380f, 20f), ModMenu.speedhackString, guistyle))
-			{
-				ModMenu.speedhack = !ModMenu.speedhack;
-				if (ModMenu.speedhack)
-				{
-					ModMenu.speedhackString = "Speed Hack - ON";
-					ModMenu.plrControl.movementSpeed = ModMenu.standardMovementSpeed * 3f;
-					return;
-				}
-				ModMenu.speedhackString = "Speed Hack - OFF";
-				ModMenu.plrControl.movementSpeed = ModMenu.standardMovementSpeed;
-			}
-			if (GUI.Button(new Rect(10f, 60f, 185f, 20f), ModMenu.godModeString, guistyle))
-			{
-				ModMenu.godMode = !ModMenu.godMode;
-				if (ModMenu.godMode)
-				{
-					ModMenu.godModeString = "Infinite Health - ON";
-					return;
-				}
-				ModMenu.godModeString = "Infinite Health - OFF";
-			}
-			if (!ModMenu.godMode && GUI.Button(new Rect(205f, 60f, 185f, 20f), ModMenu.healString, guistyle))
-			{
-				ModMenu.healString = "Max Health";
-				ModMenu.ui.healCompletly();
-			}
-			if (GUI.Button(new Rect(10f, 90f, 380f, 20f), ModMenu.infiniteJumpString, guistyle))
-			{
-				ModMenu.infiniteJump = !ModMenu.infiniteJump;
-				if (ModMenu.infiniteJump)
-				{
-					ModMenu.infiniteJumpString = "Infinite Jump - ON";
-					ModMenu.plrControl.jumpTimerSet = 10f;
-					ModMenu.plrControl.isGrounded = true;
-					return;
-				}
-				ModMenu.infiniteJumpString = "Infinite Jump - OFF";
-				ModMenu.plrControl.jumpTimerSet = ModMenu.standardJumpTimer;
-				ModMenu.plrControl.isGrounded = true;
-			}
-			GUI.DragWindow(new Rect(0f, 0f, 10000f, 20f));
-		}
-
-		// Token: 0x060004E4 RID: 1252
+		// Token: 0x060004F5 RID: 1269
 		public static void LoadOldMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -199,7 +148,7 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x060004E5 RID: 1253
+		// Token: 0x060004F6 RID: 1270
 		public static void LoadMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -220,7 +169,9 @@ namespace ModMenu
 				}), guistyle);
 				return;
 			}
-			ModMenu.windowRect = GUI.Window(0, ModMenu.windowRect, new GUI.WindowFunction(ModMenu.DoMyWindow), ModMenu.Title, guistyle);
+			ModMenu.windowRect = GUI.Window(0, ModMenu.windowRect, new GUI.WindowFunction(ModMenu.InitMenu), ModMenu.Title, guistyle);
+			ModMenu.windowRect.x = Mathf.Clamp(ModMenu.windowRect.x, 0f, (float)Screen.width - ModMenu.windowRect.width);
+			ModMenu.windowRect.y = Mathf.Clamp(ModMenu.windowRect.y, 0f, (float)Screen.height - ModMenu.windowRect.height);
 			if (ModMenu.godMode)
 			{
 				if (ModMenu.ui)
@@ -254,58 +205,121 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x040004C7 RID: 1223
-		public static string Title;
-
-		// Token: 0x040004C8 RID: 1224
-		public static bool MenuVisible;
-
-		// Token: 0x040004C9 RID: 1225
-		public static PlayerControl plrControl;
-
-		// Token: 0x040004CA RID: 1226
-		public static float standardMovementSpeed;
-
-		// Token: 0x040004CB RID: 1227
-		public static SprungBrett jumpPad;
-
-		// Token: 0x040004CC RID: 1228
-		public static bool speedhack;
-
-		// Token: 0x040004CD RID: 1229
-		public static string speedhackString;
-
-		// Token: 0x040004CE RID: 1230
-		public static GameObject Player;
-
-		// Token: 0x040004CF RID: 1231
-		public static string healString;
-
-		// Token: 0x040004D0 RID: 1232
-		public static string godModeString;
-
-		// Token: 0x040004D1 RID: 1233
-		public static bool godMode;
-
-		// Token: 0x040004D2 RID: 1234
-		public static int standardMaxHealth;
-
-		// Token: 0x040004D3 RID: 1235
-		public static AnwaltUIManager ui;
-
-		// Token: 0x040004D4 RID: 1236
-		public static bool infiniteJump;
-
-		// Token: 0x040004D5 RID: 1237
-		public static string infiniteJumpString;
-
-		// Token: 0x040004D6 RID: 1238
-		public static float standardJumpTimer;
+		// Token: 0x060004F8 RID: 1272
+		public static void InitMenu(int windowID)
+		{
+			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
+			guistyle.normal.background = ModMenu.MakeTex(2, 2, new Color(50f, 0f, 0f, 1f));
+			guistyle.normal.textColor = Color.white;
+			guistyle.alignment = TextAnchor.UpperCenter;
+			guistyle.border = new RectOffset(2, 2, 2, 2);
+			guistyle.border.Add(new Rect(2f, 2f, 2f, 2f));
+			guistyle.hover.background = ModMenu.MakeTex(2, 2, new Color(0f, 0f, 25f, 1f));
+			if (GUI.Button(new Rect(10f, 30f, 380f, 20f), ModMenu.speedhackString, guistyle))
+			{
+				ModMenu.speedhack = !ModMenu.speedhack;
+				if (ModMenu.speedhack)
+				{
+					ModMenu.speedhackString = "Speed Hack - ON";
+					ModMenu.plrControl.movementSpeed = ModMenu.standardMovementSpeed * 3f;
+					return;
+				}
+				ModMenu.speedhackString = "Speed Hack - OFF";
+				ModMenu.plrControl.movementSpeed = ModMenu.standardMovementSpeed;
+			}
+			if (GUI.Button(new Rect(10f, 60f, 185f, 20f), ModMenu.godModeString, guistyle))
+			{
+				ModMenu.godMode = !ModMenu.godMode;
+				if (ModMenu.godMode)
+				{
+					ModMenu.godModeString = "Infinite Health - ON";
+					return;
+				}
+				ModMenu.godModeString = "Infinite Health - OFF";
+			}
+			if (!ModMenu.godMode && GUI.Button(new Rect(205f, 60f, 185f, 20f), ModMenu.healString, guistyle))
+			{
+				ModMenu.healString = "Max Health";
+				ModMenu.ui.healCompletly();
+			}
+			if (GUI.Button(new Rect(10f, 90f, 380f, 20f), ModMenu.infiniteJumpString, guistyle))
+			{
+				ModMenu.infiniteJump = !ModMenu.infiniteJump;
+				if (ModMenu.infiniteJump)
+				{
+					ModMenu.infiniteJumpString = "Infinite Jump - ON";
+					ModMenu.plrControl.jumpTimerSet = 10f;
+					ModMenu.plrControl.isGrounded = true;
+					return;
+				}
+				ModMenu.infiniteJumpString = "Infinite Jump - OFF";
+				ModMenu.plrControl.jumpTimerSet = ModMenu.standardJumpTimer;
+				ModMenu.plrControl.isGrounded = true;
+			}
+			GUI.DragWindow(new Rect(0f, 0f, 10000f, 20f));
+		}
 
 		// Token: 0x040004D7 RID: 1239
-		private static string modmenuVersion;
+		public static string Title;
 
 		// Token: 0x040004D8 RID: 1240
+		public static bool MenuVisible;
+
+		// Token: 0x040004D9 RID: 1241
+		public static PlayerControl plrControl;
+
+		// Token: 0x040004DA RID: 1242
+		public static float standardMovementSpeed;
+
+		// Token: 0x040004DB RID: 1243
+		public static SprungBrett jumpPad;
+
+		// Token: 0x040004DC RID: 1244
+		public static bool speedhack;
+
+		// Token: 0x040004DD RID: 1245
+		public static string speedhackString;
+
+		// Token: 0x040004DE RID: 1246
+		public static GameObject Player;
+
+		// Token: 0x040004DF RID: 1247
+		public static string healString;
+
+		// Token: 0x040004E0 RID: 1248
+		public static string godModeString;
+
+		// Token: 0x040004E1 RID: 1249
+		public static bool godMode;
+
+		// Token: 0x040004E2 RID: 1250
+		public static int standardMaxHealth;
+
+		// Token: 0x040004E3 RID: 1251
+		public static AnwaltUIManager ui;
+
+		// Token: 0x040004E4 RID: 1252
+		public static bool infiniteJump;
+
+		// Token: 0x040004E5 RID: 1253
+		public static string infiniteJumpString;
+
+		// Token: 0x040004E6 RID: 1254
+		public static float standardJumpTimer;
+
+		// Token: 0x040004E7 RID: 1255
+		private static string modmenuVersion;
+
+		// Token: 0x040004E8 RID: 1256
 		public static Rect windowRect = new Rect(20f, 250f, 400f, 400f);
+
+		// Token: 0x040004E9 RID: 1257
+		public static bool instantKill;
+
+		// Token: 0x040004EA RID: 1258
+		public static string instantKillString;
+
+		// Token: 0x040004EB RID: 1259
+		public static float[] oldEnemyHealths;
 	}
 }
