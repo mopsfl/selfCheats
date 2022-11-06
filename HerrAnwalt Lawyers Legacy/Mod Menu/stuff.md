@@ -15,3 +15,19 @@
 <code>Sp_08_DauerLava</code>
 <code>Outro</code>
 <code>EndlosFigthing</code></code>
+
+
+script save skins:
+<code>
+if (GUI.Button(new Rect(10f, 120f, 380f, 20f), ModMenu.unlockAllSkinsString, guistyle))
+			{
+				ModMenu.unlockAllSkinsString = ModMenu.unlockAllSkinsString;
+				Debug.Log("UNLOCK ALL SKINS.");
+				PlayerPrefs.SetInt("CapturedStudent" + ModMenu.skinselec.difficutly.ToString(), 25);
+				PlayerPrefs.SetInt("StudentsSaved" + ModMenu.skinselec.difficutly.ToString(), 25);
+				PlayerPrefs.SetInt("SuperItemCollectionCount", ModMenu.skinselec.superItemRequirement);
+				PlayerPrefs.SetInt("BestScoreFightingMode", ModMenu.skinselec.EndlessFigthingRequirement);
+				PlayerPrefs.SetInt("StudentsSaved" + ModMenu.skinselec.difficutly.ToString(), ModMenu.skinselec.SavedStudentsRequirement);
+				ModMenu.skinselec.studentsSaved = ModMenu.skinselec.SavedStudentsRequirement;
+			}
+</code>
