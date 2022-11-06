@@ -16,4 +16,4 @@
 _____________
 
 
-### Dieses Mod Menu funktioniert nur für die [Steam](https://steamcommunity.com/app/2179290) Version
+### Dieses Mod Menu funktioniert aktuell nur für die [Steam](https://steamcommunity.com/app/2179290) Version
