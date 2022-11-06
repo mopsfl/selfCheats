@@ -6,14 +6,14 @@
 2. Starte das Spiel
 
 ### Funktionen:
-> Speed Hack
-
-> God Mode / Heal
-
-> Infinite Jump
-
-> mehr bald...
+- Speed Hack
+- God Mode / Heal
+- Infinite Jump
+- mehr bald...
 
 
 ### AKTUELLE BUGS:
+_____________
 
+
+### Dieses Mod Menu funktioniert nur für die [Steam](https://steamcommunity.com/app/2179290) Version
