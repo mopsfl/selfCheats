@@ -16,4 +16,4 @@
 
 
 ### AKTUELLE BUGS:
-> Nachdem du eine "Szene" (das ende der Map) fertig hast und Unlimited Health aktiviert hast, musst du die Infinite Health Funktion an oder ausschalten, sodass die alle Funktionen wieder funktionieren!
+> -
