@@ -12,6 +12,10 @@
 - Infinite Jump
 - mehr bald...
 
+### Geplante Funktionen:
+- Quick Attack
+- Anti Lava
+
 
 ### AKTUELLE BUGS:
 keine
