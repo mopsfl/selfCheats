@@ -3,7 +3,7 @@ Cheats für Unity Games
 __________
 
 [![DISCORD](https://img.shields.io/discord/1039096335326007336?color=738ADB&label=Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/g4EGAwjUAK)
-[![JOINDISCORD](https://img.shields.io/badge/JOIN-green?style=for-the-badge)](https://discord.gg/g4EGAwjUAK#join){:target="_blank"}
+[![JOINDISCORD](https://img.shields.io/badge/JOIN-green?style=for-the-badge)](https://discord.gg/g4EGAwjUAK#join)
 
 __________
 
