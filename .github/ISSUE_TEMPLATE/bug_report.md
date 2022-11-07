@@ -1,10 +1,8 @@
 ---
 name: Bug Report
 about: Erstelle einen Bug Report zur Verbesserung unserer Cheats
-game: 'Name des Spiels wo ein Bug im Mod Menu vorhanden ist'
+game: Name des Spiels wo ein Bug im Mod Menu vorhanden ist
 labels: ''
-assignees: ''
-
 ---
 
 **Beschreibe den Bug**
