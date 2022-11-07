@@ -12,4 +12,4 @@ __________
 > [Unity (2021.3.8f1)](https://unity.com/)
 
 
-###### Alle Skripts sind für offline / Einzelspieler Spiele erstellt / optimiert und könnten bei vorhandenen Multiplayer teils nicht funktionieren!
+###### Alle Mod Menus sind für offline / Einzelspieler Spiele erstellt / optimiert und könnten bei vorhandenen Multiplayer teils nicht funktionieren!
