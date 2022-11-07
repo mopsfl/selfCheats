@@ -6,6 +6,14 @@
 1. Öffne den Pfad <code>*/SteamLibrary/steamapps/common/HerrAnwalt Lawyers Legacy/LawyersLegacy_Data/Managed</code> im Explorer und ersetze die Datei <code>Assembly-CSharp.dll</code> mit dem [modifizierten (download)](https://github.com/mopsfl/dnSpy-codes/raw/main/HerrAnwalt%20Lawyers%20Legacy/Mod%20Menu/Assembly-CSharp.dll) Assembly 
 2. Starte das Spiel
 
+_________
+
+### Möglichkeiten zum deinstallieren:
+- Das Spiel neu installieren
+- Das modifizierte Assembly löschen und mit der Originalen ersetzen.
+###### Es ist empfohlen, ein Backup der Originalen Assembly Datei zu erstellen.
+_________
+
 ### Funktionen:
 - Speed Hack
 - God Mode / Heal
@@ -17,6 +25,7 @@
 - Anti Lava
 - Hide Button
 
+_____________
 
 ### AKTUELLE BUGS:
 keine
