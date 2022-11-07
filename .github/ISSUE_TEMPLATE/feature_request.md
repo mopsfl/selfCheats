@@ -1,11 +1,11 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+name: Feature Anfrage
+about: Empfehlen sie ein Feature/Lösung für ein/die Mod Menu/-s
 
 ---
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Beschreiben Sie das gewünschte Features / die Lösung** (Beispiel)
+> Spiel: Spiel Name (optional)
+
+> Beschreibung: Beschreibung deiner Anfrage
+
