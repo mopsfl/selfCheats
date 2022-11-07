@@ -13,7 +13,7 @@ ________________________
 ________________________
 
 **Beschreibe den Bug**<br>
-Eine klare Beschreibung des Bugs.
+> Eine klare Beschreibung des Bugs.
 
 ________________________
 
