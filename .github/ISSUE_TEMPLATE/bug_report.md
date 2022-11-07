@@ -5,8 +5,17 @@ game: Name des Spiels wo ein Bug im Mod Menu vorhanden ist
 labels: ''
 ---
 
-**Beschreibe den Bug**
+________________________
+
+**Welches Mod Menu für welches Spiel?**
+> Name des Spieles
+
+________________________
+
+**Beschreibe den Bug**<br>
 Eine klare Beschreibung des Bugs.
+
+________________________
 
 **Zum reproduzieren**
 Schritte zum Reproduzieren des Verhaltens/Bugs: (Beispiel)
