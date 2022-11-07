@@ -1,18 +1,17 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
+name: Bug Report
+about: Erstelle einen Bug Report zur Verbesserung unserer Cheats
+game: 'Name des Spiels wo ein Bug im Mod Menu vorhanden ist'
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Beschreibe den Bug**
+Eine klare Beschreibung des Bugs.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Zum reproduzieren**
+Schritte zum Reproduzieren des Verhaltens/Bugs: (Beispiel)
+1. Gehe zu '...'
+2. Klicke auf '....'
+3. Siehe Fehler
