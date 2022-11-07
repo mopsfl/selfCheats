@@ -31,5 +31,5 @@ _____________
 keine
 _____________
 
-### Du hast ein Bug gefunden? Klick [hier](https://github.com/mopsfl/unity-game-cheats/issues/new/choose) und reporte es
+### Du hast ein Bug gefunden? Klick [hier](https://github.com/mopsfl/unity-game-cheats/issues/new/choose) und reporte ihn
 ### Dieses Mod Menu funktioniert aktuell nur für die [Steam](https://steamcommunity.com/app/2179290) Version
