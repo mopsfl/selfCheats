@@ -18,12 +18,12 @@ _________
 - Speed Hack
 - God Mode / Heal
 - Infinite Jump
+- No Attack Cooldown
+- Ignore Lava
 - mehr bald...
 
 ### Geplante Funktionen / Features:
-- Quick Attack
-- Ignore Lava
-- Hide Button
+- keine
 
 _____________
 
