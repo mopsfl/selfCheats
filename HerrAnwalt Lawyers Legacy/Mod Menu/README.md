@@ -22,7 +22,7 @@ _________
 
 ### Geplante Funktionen / Features:
 - Quick Attack
-- Anti Lava
+- Ignore Lava
 - Hide Button
 
 _____________
