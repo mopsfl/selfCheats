@@ -8,7 +8,8 @@ __________
 __________
 
 ### Geplante Mod Menus
-- PC Building Simulator (1. Teil)
+- [PC Building Simulator 1](https://steamcommunity.com/app/621060)
+- [Darkwood](https://steamcommunity.com/app/274520)
 
 ### Benutzte Tools:
 > [dnSpy (v.6.1.8)](https://github.com/dnSpy/dnSpy)<br>
