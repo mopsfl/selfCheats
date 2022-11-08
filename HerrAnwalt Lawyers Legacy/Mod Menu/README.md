@@ -1,4 +1,4 @@
-[![VERSION](https://img.shields.io/badge/Version-0.2-red?style=for-the-badge)](https://github.com/mopsfl/unity-game-cheats/blob/main/HerrAnwalt%20Lawyers%20Legacy/Mod%20Menu/)
+[![VERSION](https://img.shields.io/badge/Version-0.21-red?style=for-the-badge)](https://github.com/mopsfl/unity-game-cheats/blob/main/HerrAnwalt%20Lawyers%20Legacy/Mod%20Menu/)
 [![DOWNLOAD](https://img.shields.io/badge/Download-green?style=for-the-badge)](https://github.com/mopsfl/dnSpy-codes/raw/main/HerrAnwalt%20Lawyers%20Legacy/Mod%20Menu/Assembly-CSharp.dll)
 ###### Das Mod Menu wird automatisch bei einer älteren Version des Spieles deaktiviert. <br> Sollte dies nicht passieren und das Mod Menu nicht mehr funktionieren, musst du auf eine neue Version warten oder eine vorhandene installieren.
 
