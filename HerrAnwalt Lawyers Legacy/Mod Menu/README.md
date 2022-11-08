@@ -28,7 +28,7 @@ _________
 _____________
 
 ### AKTUELLE BUGS:
-- "Ignore Lava" funktioniert nicht bei dem Level, bei dem die Lava permanent da ist.
+- "Ignore Lava" funktioniert nicht bei dem Level, bei dem die Lava permanent da ist, sondern nur bei den Leveln, wo die Lava alle paar Sekunden auftaucht.
 _____________
 
 ### Du hast ein Bug gefunden? Klick [hier](https://github.com/mopsfl/unity-game-cheats/issues/new/choose) und reporte ihn
