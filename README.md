@@ -8,7 +8,7 @@ __________
 __________
 
 ### Geplante Mod Menus
-- PC Building Simulator (1)
+- PC Building Simulator (1. Teil)
 
 ### Benutzte Tools:
 > [dnSpy (v.6.1.8)](https://github.com/dnSpy/dnSpy)<br>
