@@ -15,7 +15,10 @@ _________
 _________
 
 ### Funktionen:
-- bald...
+- Speed Hack
+- Strong Flashlight
+- Collect all Items
+- Unlock all Steam achievements
 
 ### Geplante Funktionen / Features:
 - keine
