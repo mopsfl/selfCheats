@@ -1,4 +1,4 @@
-# RENEW COMMING SOON
+# REMAKE COMMING SOON (V2)
 
 ### How to install:
 1. Go to <code>*/SteamLibrary/steamapps/common/RUSSIAPHOBIA/RUSSIAPHOBIA_Data/Managed</code> and replace <code>Assembly-CSharp.dll</code> with the [modified (download)](https://github.com/mopsfl/dnSpy-codes/raw/main/RUSSIAPHOBIA/mod%20menu/Assembly-CSharp.dll) one
