@@ -6,7 +6,7 @@ namespace ModMenu
 	// Token: 0x020000F4 RID: 244
 	public class ModMenu : MonoBehaviour
 	{
-		// Token: 0x060004F9 RID: 1273
+		// Token: 0x060004F9 RID: 1273 RVA: 0x0001A310 File Offset: 0x00018510
 		static ModMenu()
 		{
 			ModMenu.MenuVisible = false;
@@ -34,7 +34,7 @@ namespace ModMenu
 			ModMenu.Title = "HerrAnwalt: Lawyers Legacy Mod Menu v." + ModMenu.modmenuVersion;
 		}
 
-		// Token: 0x060004FA RID: 1274
+		// Token: 0x060004FA RID: 1274 RVA: 0x0001A424 File Offset: 0x00018624
 		private static Texture2D MakeTex(int width, int height, Color col)
 		{
 			Color[] array = new Color[width * height];
@@ -48,7 +48,7 @@ namespace ModMenu
 			return texture2D;
 		}
 
-		// Token: 0x060004FB RID: 1275
+		// Token: 0x060004FB RID: 1275 RVA: 0x0001A464 File Offset: 0x00018664
 		public static void LoadOldMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -72,7 +72,6 @@ namespace ModMenu
 			if (GUI.Button(new Rect((float)(Screen.width / 2 - 200), (float)(Screen.height - 30), 400f, 20f), "Mod Menu", guistyle))
 			{
 				ModMenu.MenuVisible = !ModMenu.MenuVisible;
-				Debug.Log(ModMenu.MenuVisible);
 			}
 			if (ModMenu.MenuVisible)
 			{
@@ -160,10 +159,9 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x060004FC RID: 1276
+		// Token: 0x060004FC RID: 1276 RVA: 0x0001A830 File Offset: 0x00018A30
 		public static void LoadMenu()
 		{
-			Debug.Log("LOAD MENU");
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
 			guistyle.normal.background = ModMenu.MakeTex(2, 2, new Color(0.1f, 0.1f, 0.1f, 1f));
 			guistyle.normal.textColor = Color.white;
@@ -252,10 +250,9 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x060004FD RID: 1277
+		// Token: 0x060004FD RID: 1277 RVA: 0x0001AB50 File Offset: 0x00018D50
 		public static void InitMenu(int windowID)
 		{
-			Debug.Log("INIT MENU");
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
 			guistyle.normal.background = ModMenu.MakeTex(2, 2, new Color(50f, 0f, 0f, 1f));
 			guistyle.normal.textColor = Color.white;
@@ -363,7 +360,6 @@ namespace ModMenu
 				ModMenu.windowRect.height = 400f;
 				ModMenu.windowRect.height = 400f;
 			}
-			Debug.Log(ModMenu.windowRect.position);
 		}
 
 		// Token: 0x040004DB RID: 1243
@@ -447,7 +443,7 @@ namespace ModMenu
 		// Token: 0x040004F5 RID: 1269
 		public static bool hideUI;
 
-		// Token: 0x04000566 RID: 1382
+		// Token: 0x040004F6 RID: 1270
 		public static string scriptVersion;
 	}
 }
