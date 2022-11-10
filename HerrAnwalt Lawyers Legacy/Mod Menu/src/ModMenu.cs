@@ -6,7 +6,7 @@ namespace ModMenu
 	// Token: 0x020000F4 RID: 244
 	public class ModMenu : MonoBehaviour
 	{
-		// Token: 0x060004F9 RID: 1273 RVA: 0x0001A308 File Offset: 0x00018508
+		// Token: 0x060004F9 RID: 1273
 		static ModMenu()
 		{
 			ModMenu.MenuVisible = false;
@@ -27,14 +27,14 @@ namespace ModMenu
 			ModMenu.Player = GameObject.FindGameObjectWithTag("Player");
 			ModMenu.plrControl = UnityEngine.Object.FindObjectOfType<PlayerControl>();
 			ModMenu.blava = UnityEngine.Object.FindObjectOfType<BodenIstLavaTest>();
-			ModMenu.modmenuVersion = "0.2";
+			ModMenu.modmenuVersion = "0.21";
 			ModMenu.standardMaxHealth = ModMenu.ui.maxHealth;
 			ModMenu.standardMovementSpeed = ModMenu.plrControl.movementSpeed;
 			ModMenu.standardJumpTimer = ModMenu.plrControl.jumpTimerSet;
 			ModMenu.Title = "HerrAnwalt: Lawyers Legacy Mod Menu v." + ModMenu.modmenuVersion;
 		}
 
-		// Token: 0x060004FA RID: 1274 RVA: 0x0001A41C File Offset: 0x0001861C
+		// Token: 0x060004FA RID: 1274
 		private static Texture2D MakeTex(int width, int height, Color col)
 		{
 			Color[] array = new Color[width * height];
@@ -48,7 +48,7 @@ namespace ModMenu
 			return texture2D;
 		}
 
-		// Token: 0x060004FB RID: 1275 RVA: 0x0001A45C File Offset: 0x0001865C
+		// Token: 0x060004FB RID: 1275
 		public static void LoadOldMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -160,9 +160,10 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x060004FC RID: 1276 RVA: 0x0001A838 File Offset: 0x00018A38
+		// Token: 0x060004FC RID: 1276
 		public static void LoadMenu()
 		{
+			Debug.Log("LOAD MENU");
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
 			guistyle.normal.background = ModMenu.MakeTex(2, 2, new Color(0.1f, 0.1f, 0.1f, 1f));
 			guistyle.normal.textColor = Color.white;
@@ -251,9 +252,10 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x060004FD RID: 1277 RVA: 0x0001AB58 File Offset: 0x00018D58
+		// Token: 0x060004FD RID: 1277
 		public static void InitMenu(int windowID)
 		{
+			Debug.Log("INIT MENU");
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
 			guistyle.normal.background = ModMenu.MakeTex(2, 2, new Color(50f, 0f, 0f, 1f));
 			guistyle.normal.textColor = Color.white;
@@ -361,6 +363,7 @@ namespace ModMenu
 				ModMenu.windowRect.height = 400f;
 				ModMenu.windowRect.height = 400f;
 			}
+			Debug.Log(ModMenu.windowRect.position);
 		}
 
 		// Token: 0x040004DB RID: 1243
@@ -443,5 +446,8 @@ namespace ModMenu
 
 		// Token: 0x040004F5 RID: 1269
 		public static bool hideUI;
+
+		// Token: 0x04000566 RID: 1382
+		public static string scriptVersion;
 	}
 }
