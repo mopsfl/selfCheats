@@ -116,11 +116,6 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x06001E52 RID: 7762
-		public ModMenu()
-		{
-		}
-
 		// Token: 0x040029ED RID: 10733
 		public static string Title;
 
