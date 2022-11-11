@@ -18,7 +18,7 @@ _________
 ### Möglichkeiten zum deinstallieren:
 - Das Spiel neu installieren
 - Das modifizierte Assembly löschen und mit der Originalen ersetzen.
-###### Es ist empfohlen, ein Backup der Originalen Assembly Datei zu erstellen.
+###### (Es ist empfohlen, ein Backup der Originalen Assembly Datei zu erstellen.)
 _________
 
 ### Funktionen:
