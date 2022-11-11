@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace ModMenu
 {
-	// Token: 0x020000F4 RID: 244
+	// Token: 0x0200011B RID: 283
 	public class ModMenu : MonoBehaviour
 	{
-		// Token: 0x060004F9 RID: 1273 RVA: 0x0001A310 File Offset: 0x00018510
+		// Token: 0x06000846 RID: 2118 RVA: 0x00020618 File Offset: 0x0001E818
 		static ModMenu()
 		{
 			ModMenu.MenuVisible = false;
@@ -27,14 +27,14 @@ namespace ModMenu
 			ModMenu.Player = GameObject.FindGameObjectWithTag("Player");
 			ModMenu.plrControl = UnityEngine.Object.FindObjectOfType<PlayerControl>();
 			ModMenu.blava = UnityEngine.Object.FindObjectOfType<BodenIstLavaTest>();
-			ModMenu.modmenuVersion = "0.21";
+			ModMenu.modmenuVersion = "0.221";
 			ModMenu.standardMaxHealth = ModMenu.ui.maxHealth;
 			ModMenu.standardMovementSpeed = ModMenu.plrControl.movementSpeed;
 			ModMenu.standardJumpTimer = ModMenu.plrControl.jumpTimerSet;
 			ModMenu.Title = "HerrAnwalt: Lawyers Legacy Mod Menu v." + ModMenu.modmenuVersion;
 		}
 
-		// Token: 0x060004FA RID: 1274 RVA: 0x0001A424 File Offset: 0x00018624
+		// Token: 0x06000847 RID: 2119 RVA: 0x0002072C File Offset: 0x0001E92C
 		private static Texture2D MakeTex(int width, int height, Color col)
 		{
 			Color[] array = new Color[width * height];
@@ -48,7 +48,7 @@ namespace ModMenu
 			return texture2D;
 		}
 
-		// Token: 0x060004FB RID: 1275 RVA: 0x0001A464 File Offset: 0x00018664
+		// Token: 0x06000848 RID: 2120 RVA: 0x0002076C File Offset: 0x0001E96C
 		public static void LoadOldMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -159,7 +159,7 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x060004FC RID: 1276 RVA: 0x0001A830 File Offset: 0x00018A30
+		// Token: 0x06000849 RID: 2121 RVA: 0x00020B38 File Offset: 0x0001ED38
 		public static void LoadMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -250,7 +250,7 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x060004FD RID: 1277 RVA: 0x0001AB50 File Offset: 0x00018D50
+		// Token: 0x0600084A RID: 2122 RVA: 0x00020E58 File Offset: 0x0001F058
 		public static void InitMenu(int windowID)
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -362,88 +362,88 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x040004DB RID: 1243
+		// Token: 0x040005A8 RID: 1448
 		public static string Title;
 
-		// Token: 0x040004DC RID: 1244
+		// Token: 0x040005A9 RID: 1449
 		public static bool MenuVisible;
 
-		// Token: 0x040004DD RID: 1245
+		// Token: 0x040005AA RID: 1450
 		public static PlayerControl plrControl;
 
-		// Token: 0x040004DE RID: 1246
+		// Token: 0x040005AB RID: 1451
 		public static float standardMovementSpeed;
 
-		// Token: 0x040004DF RID: 1247
+		// Token: 0x040005AC RID: 1452
 		public static SprungBrett jumpPad;
 
-		// Token: 0x040004E0 RID: 1248
+		// Token: 0x040005AD RID: 1453
 		public static bool speedhack;
 
-		// Token: 0x040004E1 RID: 1249
+		// Token: 0x040005AE RID: 1454
 		public static string speedhackString;
 
-		// Token: 0x040004E2 RID: 1250
+		// Token: 0x040005AF RID: 1455
 		public static GameObject Player;
 
-		// Token: 0x040004E3 RID: 1251
+		// Token: 0x040005B0 RID: 1456
 		public static string healString;
 
-		// Token: 0x040004E4 RID: 1252
+		// Token: 0x040005B1 RID: 1457
 		public static string godModeString;
 
-		// Token: 0x040004E5 RID: 1253
+		// Token: 0x040005B2 RID: 1458
 		public static bool godMode;
 
-		// Token: 0x040004E6 RID: 1254
+		// Token: 0x040005B3 RID: 1459
 		public static int standardMaxHealth;
 
-		// Token: 0x040004E7 RID: 1255
+		// Token: 0x040005B4 RID: 1460
 		public static AnwaltUIManager ui;
 
-		// Token: 0x040004E8 RID: 1256
+		// Token: 0x040005B5 RID: 1461
 		public static bool infiniteJump;
 
-		// Token: 0x040004E9 RID: 1257
+		// Token: 0x040005B6 RID: 1462
 		public static string infiniteJumpString;
 
-		// Token: 0x040004EA RID: 1258
+		// Token: 0x040005B7 RID: 1463
 		public static float standardJumpTimer;
 
-		// Token: 0x040004EB RID: 1259
+		// Token: 0x040005B8 RID: 1464
 		private static string modmenuVersion;
 
-		// Token: 0x040004EC RID: 1260
+		// Token: 0x040005B9 RID: 1465
 		public static Rect windowRect = new Rect(20f, 250f, 400f, 400f);
 
-		// Token: 0x040004ED RID: 1261
+		// Token: 0x040005BA RID: 1466
 		public static bool instantKill;
 
-		// Token: 0x040004EE RID: 1262
+		// Token: 0x040005BB RID: 1467
 		public static string instantKillString;
 
-		// Token: 0x040004EF RID: 1263
+		// Token: 0x040005BC RID: 1468
 		public static string quickAttackString;
 
-		// Token: 0x040004F0 RID: 1264
+		// Token: 0x040005BD RID: 1469
 		public static bool quickAttack;
 
-		// Token: 0x040004F1 RID: 1265
+		// Token: 0x040005BE RID: 1470
 		public static PlayerAttacks plrAttacks;
 
-		// Token: 0x040004F2 RID: 1266
+		// Token: 0x040005BF RID: 1471
 		public static BodenIstLavaTest blava;
 
-		// Token: 0x040004F3 RID: 1267
+		// Token: 0x040005C0 RID: 1472
 		public static string lavaString;
 
-		// Token: 0x040004F4 RID: 1268
+		// Token: 0x040005C1 RID: 1473
 		public static bool lava;
 
-		// Token: 0x040004F5 RID: 1269
+		// Token: 0x040005C2 RID: 1474
 		public static bool hideUI;
 
-		// Token: 0x040004F6 RID: 1270
+		// Token: 0x040005C3 RID: 1475
 		public static string scriptVersion;
 	}
 }
