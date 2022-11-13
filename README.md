@@ -7,14 +7,6 @@ __________
 
 __________
 
-### Verfügbare Mod Menus
-> [HerrAnwalt: Lawyers Legacy](https://github.com/mopsfl/selfCheats/tree/main/HerrAnwalt%20Lawyers%20Legacy/Mod%20Menu)<br>
-> [RUSSIAPHOBIA](https://github.com/mopsfl/selfCheats/tree/main/RUSSIAPHOBIA/Mod%20Menu)
-
-### Geplante Mod Menus
-> [PC Building Simulator 1](https://steamcommunity.com/app/621060)<br>
-> [Darkwood](https://steamcommunity.com/app/274520)
-
 ### Benutzte Tools:
 > [dnSpy (v.6.1.8)](https://github.com/dnSpy/dnSpy)<br>
 > [Unity (2021.3.8f1)](https://unity.com/)
