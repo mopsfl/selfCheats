@@ -6,7 +6,7 @@ namespace ModMenu
 	// Token: 0x0200011B RID: 283
 	public class ModMenu : MonoBehaviour
 	{
-		// Token: 0x06000846 RID: 2118 RVA: 0x00020618 File Offset: 0x0001E818
+		// Token: 0x06000846 RID: 2118
 		static ModMenu()
 		{
 			ModMenu.MenuVisible = false;
@@ -27,14 +27,14 @@ namespace ModMenu
 			ModMenu.Player = GameObject.FindGameObjectWithTag("Player");
 			ModMenu.plrControl = UnityEngine.Object.FindObjectOfType<PlayerControl>();
 			ModMenu.blava = UnityEngine.Object.FindObjectOfType<BodenIstLavaTest>();
-			ModMenu.modmenuVersion = "0.221";
+			ModMenu.modmenuVersion = "0.223";
 			ModMenu.standardMaxHealth = ModMenu.ui.maxHealth;
 			ModMenu.standardMovementSpeed = ModMenu.plrControl.movementSpeed;
 			ModMenu.standardJumpTimer = ModMenu.plrControl.jumpTimerSet;
 			ModMenu.Title = "HerrAnwalt: Lawyers Legacy Mod Menu v." + ModMenu.modmenuVersion;
 		}
 
-		// Token: 0x06000847 RID: 2119 RVA: 0x0002072C File Offset: 0x0001E92C
+		// Token: 0x06000847 RID: 2119
 		private static Texture2D MakeTex(int width, int height, Color col)
 		{
 			Color[] array = new Color[width * height];
@@ -48,7 +48,7 @@ namespace ModMenu
 			return texture2D;
 		}
 
-		// Token: 0x06000848 RID: 2120 RVA: 0x0002076C File Offset: 0x0001E96C
+		// Token: 0x06000848 RID: 2120
 		public static void LoadOldMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -159,7 +159,7 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x06000849 RID: 2121 RVA: 0x00020B38 File Offset: 0x0001ED38
+		// Token: 0x06000849 RID: 2121
 		public static void LoadMenu()
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
@@ -250,7 +250,7 @@ namespace ModMenu
 			}
 		}
 
-		// Token: 0x0600084A RID: 2122 RVA: 0x00020E58 File Offset: 0x0001F058
+		// Token: 0x0600084A RID: 2122
 		public static void InitMenu(int windowID)
 		{
 			GUIStyle guistyle = new GUIStyle(GUI.skin.label);
